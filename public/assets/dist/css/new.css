@@ -1,0 +1,59 @@
+input[type=text],input[type=date], select, textarea {
+    resize: vertical;
+}
+input[type=submit] {
+    cursor: pointer;
+    float: right;
+}
+@media screen and (max-width: 600px) {
+.col-xs-6,.col-xs-6,.register-logo, input[type=submit] {
+    width: 60%;
+    margin-top: 0;
+    }
+}
+@media screen and (min-width: 601px) {
+    .f {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .f {
+      font-size: 20px;
+    }
+  }
+.fsize{
+    font-size: x-large;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input[type=text],input[type=date], textarea,
+input[type=number],input[type=email],
+input[type=password],select {
+-webkit-transition: all 0.30s ease-in-out;
+-moz-transition: all 0.30s ease-in-out;
+-ms-transition: all 0.30s ease-in-out;
+-o-transition: all 0.30s ease-in-out;
+outline: none;
+padding: 3px 0px 3px 3px;
+border: 1px solid #DDDDDD;
+resize: vertical;
+}
+
+input::placeholder {
+font:bold;
+}
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=date]:focus,
+textarea:focus,
+select:focus {
+box-shadow: 0 0 5px rgba(0, 0, 128, 0.9);
+padding: 3px 0px 3px 3px;
+border: 1px solid rgba(0, 0, 128, 0.9);
+}
